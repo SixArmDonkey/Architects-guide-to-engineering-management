@@ -143,7 +143,7 @@ Communication through documentation creates clarity.  Engineers should be mentor
 
 
 
-## My 1 on 1 philosophy
+## 1 on 1 philosophy
 
 1 on 1's belong to the employee, not the manager.  It is their time to vent, ask for career guidance, or talk about non-work blockers.  The EM should ask probing questions like, "Are you blocked?  Are you bored?  Is the PM driving you crazy?"  The meeting is about monitoring their psychological safety, and ensuring that their mind is free to focus on code.
 
