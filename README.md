@@ -231,6 +231,32 @@ An engineering manager's approach to cognitive protection is built on three oper
 3. **Urgency vs Importance:** Engineers must be granted permission to completely disconnect from notifications to enter and protect a deep flow state, or to step away entirely to recharge.  In a documentation first culture, engineers may be tempted to immediately drop work to read any new incoming documentation.  Ensure that engineers have blocked out time to read new documentation outside of dedicated coding time.
 
 
+## New Hire Onboarding
+
+Onboarding is not solely an HR function, it is an engineering discipline.  The goal of onboarding is to familiarize the new hire with the environment, establish psychological safety, and to have the engineer safely commit one change to production within their first 72 hours.  
+
+1. **The Development Environment:** Local development environments must be quick and easy to set up.  Ensure that there is clear documentation listing the required tools and describing how to install and set up each.
+
+2. **Getting to know the software:** A catalog of up to date, chronological, RFCs and ADRs provide the engineer with the full systemic context and clearly described "why" behind the architecture.  For example, through the documentation, the engineer may learn why Postgres was chosen over Mongo, why single writer partitions are enforced, how messages cross bounded contexts, where to find logs, and the associated failure modes.  Comprehensive documentation builds deep systemic context in days rather than months.
+
+3. **The first commit:** Every new engineer should ship a small change to production within their first 72 hours.  This is not about initial velocity - it is about familiarizing the engineer with the build tools, deployment pipeline, and code review process.  Assign a small well scoped ticket, such as fixing or clarifying a log message or adding a non-critical feature to a system.  Shipping a small change verifies the following:
+
+- Their repository and deployment pipeline credentials are valid
+- The local test suite completes successfully
+- That the engineer understands the PR and review process
+
+The engineer's first deployment gives them confidence, builds immediate momentum, and proves the development pipelines are safe and observable.
+
+4. **Pairing:** Do not let a new hire initially work in total isolation.  On day 1, assign a designated senior engineer as their primary team contact.  The senior engineer will guide them through their first PR, introduces them to the team's async communication style, and provides immediate answers to any of their questions.  The EM will monitor this relationship during 1 on 1s to ensure the new engineer feels supported and comfortable in their new working environment. 
+
+5. **The first 3 months:** New engineers must not be subjected to immediate backpressure, and instead their workload must be gradually scaled. 
+
+- **Month 1:** Focus on the toolchain, reading documentation, fixing isolated bugs, and writing comprehensive tests.  The goal is for the engineer to learn about the architecture, the codebase, and the team's working style.  At the end of the first month, the engineer should fully understand how to source answers to their questions and how to navigate the codebase.
+
+- **Month 2:** The new hire will own and ship their first feature based on well defined acceptance criteria, document their feature, and potentially author their first RFC.  The goal is full autonomy.
+
+- **Month 3:** By the third month, the new hire should fully understand how the team operates, participating in RFC reviews, self-directing the majority of their daily workflow, and fully owning their assigned tasks.
+
 
 ## The 30/60/90 Day Plan for a new EM
 
